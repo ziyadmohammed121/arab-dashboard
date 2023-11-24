@@ -52,6 +52,7 @@ const Dashboard = () => {
       features:
         "Basic Documents, Task flow,Voting, Accounting, Banking, Notes, Investor, Director and team",
       btnText: "Get Started",
+      title: "Free forever",
     },
     {
       name: "Enterprise Plan",
@@ -64,11 +65,12 @@ const Dashboard = () => {
       },
       bg: "bg-blue-300",
       btnText: "Get Contact",
+      title: "Let's connect",
     },
   ];
   return (
-    <div className="h-screen w-full ">
-      <div className="w-[80%] my-[40px] mx-auto flex flex-col">
+    <div className="h-screen w-full overflow-y-auto">
+      <div className="lg:w-[80%] w-[90%] my-[40px] mx-auto flex flex-col">
         <h2 className="text-[22px] font-bold mb-5">
           Choose a plan that's just right for you !
         </h2>
@@ -87,7 +89,7 @@ const Dashboard = () => {
             </button>
           </div>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-24">
           {planDetails.map((item, id) => {
             return <PlanCard item={item} key={id} />;
           })}

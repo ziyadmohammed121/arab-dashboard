@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPuzzlePiece, FaQuestion } from "react-icons/fa";
+import { IoMdLogOut } from "react-icons/io";
 import { MdDashboard, MdOutlineContactMail } from "react-icons/md";
 import { PiFlowerTulipDuotone } from "react-icons/Pi";
 import { NavLink } from "react-router-dom";
@@ -16,7 +17,7 @@ const SideBar = () => {
   return (
     <div className="h-screen w-[210px] flex flex-col pr-8 bg-white shadow-new">
       <div className="w-[210px] mb-5 h-[140px] flex flex-col justify-center items-center">
-        <div className="w-[80px] h-[80px] rounded-full bg-green-500">
+        <div className="w-[80px] mt-5 h-[80px] rounded-full bg-green-500">
           <img
             src="./user.jpg"
             className="w-full h-full object-cover overflow-hidden rounded-full"
@@ -43,6 +44,12 @@ const SideBar = () => {
             </NavLink>
           );
         })}
+      </div>
+      <div className="flex flex-col justify-end h-full w-[210px]">
+        <button className="bg-blue-200/30 py-2 gap-5 flex justify-center items-center">
+          <span className="text-blue-400 font-bold text-[16px]">Logout</span>
+          <IoMdLogOut color="rgb(96 165 250)" size={25} />
+        </button>
       </div>
     </div>
   );
