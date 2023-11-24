@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-one {
+  width: 110px;
+  height: 110px;
+  background-color: white;
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+.shadow-new {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  top: 50%;
+  background: red;
+  opacity: 0.7;
+  content: "";
+  width: 110%;
+  position: absolute;
+  height: 0.1em;
+  border-radius: 2px;
+  left: -5%;
+  white-space: nowrap;
+  display: block;
+  transform: rotate(10deg);
+}
