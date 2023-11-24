@@ -2,13 +2,13 @@ import React from "react";
 import { FaPuzzlePiece, FaQuestion } from "react-icons/fa";
 import { IoMdLogOut } from "react-icons/io";
 import { MdDashboard, MdOutlineContactMail } from "react-icons/md";
-import { PiFlowerTulipDuotone } from "react-icons/Pi";
+// import { PiFlowerTulipDuotone } from "react-icons/Pi";
 import { NavLink } from "react-router-dom";
 
 const SideBar = () => {
   const navLinks = [
     { title: "Dashboard", link: "/", icon: <MdDashboard /> },
-    { title: "Perks", link: "/perks", icon: <PiFlowerTulipDuotone /> },
+    { title: "Perks", link: "/perks", icon:  <FaPuzzlePiece />   },
     { title: "Addons", link: "/addons", icon: <FaPuzzlePiece /> },
     { title: "FAQ", link: "/faq", icon: <FaQuestion /> },
     { title: "Support", link: "/support", icon: <MdOutlineContactMail /> },
